@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         Picasso.get().load(imageUrl).into(imageview)
 
         download_btn.setOnClickListener {
-            // After API 23 (Marshmallow) and lower Android 10 you need to ask for permission first before save in External Storage(Micro SD)
+            // After API 23 (Marshmallow) and lower Android 10 you need to ask for permission first before save an image
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && Build.VERSION.SDK_INT < Build.VERSION_CODES.Q) {
                 askPermissions()
             } else {
