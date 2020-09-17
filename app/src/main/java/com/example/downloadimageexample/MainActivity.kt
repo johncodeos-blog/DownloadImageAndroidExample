@@ -22,7 +22,7 @@ import java.io.File
 
 class MainActivity : AppCompatActivity() {
 
-    var imageUrl = "https://i.imgur.com/yc3CbKN.jpg"
+    private var imageUrl = "https://i.imgur.com/yc3CbKN.jpg"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -117,8 +117,8 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    var msg: String? = ""
-    var lastMsg = ""
+    private var msg: String? = ""
+    private var lastMsg = ""
 
     private fun downloadImage(url: String) {
         val directory = File(Environment.DIRECTORY_PICTURES)
