@@ -1,6 +1,7 @@
 package com.example.downloadimageexample
 
 import android.Manifest
+import android.annotation.SuppressLint
 import android.annotation.TargetApi
 import android.app.DownloadManager
 import android.content.Context
@@ -121,6 +122,7 @@ class MainActivity : AppCompatActivity() {
     private var msg: String? = ""
     private var lastMsg = ""
 
+    @SuppressLint("Range")
     private fun downloadImage(url: String) {
         val directory = File(Environment.DIRECTORY_PICTURES)
 
